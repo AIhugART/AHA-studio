@@ -12,17 +12,27 @@
   "_comment_platform_keys": "Key dat ten theo KIEN TRUC ngay tu v1 (D24). Them mot key sau nay la ADDITIVE; DOI TEN mot key sau khi client da phat hanh la pha hop dong voi dung nhung ban cai cu khong the tu sua. Chi phi doi bay gio bang khong vi chua co client nao doc file nay. Windows arm64 chua co ban build, nhung cho ten da san sang.",
 
   "windows_x86_64": {
-    "download_url": "https://github.com/OWNER/aha-studio-releases/releases/download/v1.0.0/aha-paint-daemon_windows_x86_64_v1.0.0.zip",
+    "download_url": "https://github.com/OWNER/AHA-studio/releases/download/v1.0.0/aha-paint-daemon_windows_x86_64_v1.0.0.zip",
     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
     "size_bytes": 0
   },
   "macos_arm64": {
-    "download_url": "https://github.com/OWNER/aha-studio-releases/releases/download/v1.0.0/aha-paint-daemon_macos_arm64_v1.0.0.zip",
+    "download_url": "https://github.com/OWNER/AHA-studio/releases/download/v1.0.0/aha-paint-daemon_macos_arm64_v1.0.0.zip",
     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
     "size_bytes": 0
   },
   "macos_x86_64": {
-    "download_url": "https://github.com/OWNER/aha-studio-releases/releases/download/v1.0.0/aha-paint-daemon_macos_x86_64_v1.0.0.zip",
+    "download_url": "https://github.com/OWNER/AHA-studio/releases/download/v1.0.0/aha-paint-daemon_macos_x86_64_v1.0.0.zip",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "size_bytes": 0
+  },
+
+  "_comment_macos_plugin": "MOI 2026-09-23 (plan/2026-09/2026-09-23_macos_plugin_content_update_channel.md, D3/D4). Khoi TUY CHON, rieng biet voi 3 platform key o tren -- parse boi ham RIENG (daemon/update_manifest.py's parse_macos_plugin_block()), KHONG boi parse_manifest() dung chung, de mot khoi hong o day khong lam dung tu-cap-nhat cua daemon tren MOI nen tang. Vang mat hoan toan la BINH THUONG (moi manifest truoc kenh nay, hoac mot release khong co ban plugin moi de offer) -- CHI mot khoi CO MAT nhung sai hinh dang moi dang cho y. Mot artifact DUY NHAT cho ca macos_arm64 lan macos_x86_64 (D1: .ccx la JS/HTML/CSS/icon qua UXP, khong co ma may bien dich rieng kien truc). min_daemon_version (D4) la san chan tuong thich -- kenh nay se HOAN lai (khong cai) khi DAEMON_VERSION dang chay thap hon gia tri nay.",
+
+  "macos_plugin": {
+    "version": "1.9.0",
+    "min_daemon_version": "2.6.0",
+    "download_url": "https://github.com/OWNER/AHA-studio/releases/download/v2.6.0/AHA-Paint_PS-macos-plugin-v1.9.0.ccx",
     "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
     "size_bytes": 0
   },
